@@ -1,0 +1,39 @@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueceu a Senha</title>
+    <link rel="stylesheet" href="~/css/senha.css">
+</head>
+<body>
+
+<main>
+    <section class="esqueceu-senha">
+        <h1>Esqueceu a Senha</h1>
+
+        <form method="post" asp-action="EnviarLink" asp-controller="EsqueciSenha">
+            <div class="form-campos">
+                <label for="email">Email</label>
+                <input type="email" class="email" name="email" id="email" required />
+            </div>
+
+            <div class="botoes">
+                <button class="enviar" type="submit">Enviar Link de Recuperação</button>
+
+                <a class="voltar" asp-controller="Login" asp-action="Index">Voltar para Login</a>
+            </div>
+
+            <div class="erro" style="color:red; margin-top:10px;">
+                @ViewBag.Erro
+            </div>
+        </form>
+    </section>
+</main>
+
+</body>
+</html>

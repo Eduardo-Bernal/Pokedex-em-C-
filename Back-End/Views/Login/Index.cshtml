@@ -1,0 +1,57 @@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="~/css/login.css">
+</head>
+<body>
+
+  <main>
+   
+    <section class="login">
+      <h1>Iniciar Sessão</h1>
+
+      
+      <form asp-action="Entrar" asp-controller="Login" method="post">
+        
+        <div class="logar">
+
+          <label for="email">Email</label>
+          <input type="email" class="usuario" name="email" id="email" required>
+
+          <label for="senha">Senha</label>
+          <input type="password" class="senha" name="senha" id="senha" required>
+
+        </div>
+
+        
+        <div class="erro" style="color:red; margin-top:10px;">
+            @ViewBag.Erro
+        </div>
+
+        <div class="botoes">
+          <button class="entrar" type="submit">Entrar</button>
+          <a class="registrar" href="~/Cadastro/Index">
+    Registre-se
+</a>
+        </div>
+      
+      </form>
+
+    </section>
+
+    <aside class="login-alternativo">
+      <h2>Ou Use</h2>
+      <img class="google" src="~/assets/google.png" alt="Google Login">
+      <a asp-controller="EsqueciSenha" asp-action="Index">Esqueceu sua senha?</a>
+    </aside>
+  </main>
+
+</body>
+</html>

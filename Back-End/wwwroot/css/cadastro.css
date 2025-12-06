@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 2;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Press Start 2P", system-ui;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('../assets/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #362D3E;
+    border: 6px solid #cd290c;
+    color: #ffffff;
+    border-radius: 18px;
+    height: 65vh;
+    width: 40vw;
+    font-size: 1.6vh;
+}
+
+h1 {
+    color: #F8B050;
+    margin-bottom: 2%;
+}
+
+.form-campos {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 40vw;
+    gap: 4%;
+    margin-left: 24%;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-around;
+    width: 40vw;
+    height: 8vh;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  
+}
+
+.cadastrar,
+.voltar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #362D3E;
+    color: white;
+    width: 20%;
+    font-size: 0.7em;
+    border: 4px solid #cd290c;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nomeUsuario,
+    .email,
+    .senha,
+    .confirmarSenha {
+    width: 50%;
+    height: 23%;
+    background: #362D3E;
+    border: 4px solid #cd290c;
+    border-radius: 10px;
+    outline: none;
+    color: #ffffff;
+    font-size: 0.8em;
+}
+
+@media(max-width:780px){
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Press Start 2P", system-ui;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        background-image: url('../assets/bg.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+    }
+    
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .cadastro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #362D3E;
+        border: 6px solid #cd290c;
+        color: #ffffff;
+        border-radius: 18px;
+        height: 60vh;
+        width: 45vw;
+        font-size: 1.4vh;
+    }
+    
+    h1 {
+        color: #F8B050;
+        font-size: 2.3vh;
+    }
+    
+    .form-campos {
+        display: flex;
+        flex-direction: column;
+        height: 40vh;
+        width: 35vw;
+        gap: 4%;
+    }
+    
+    .botoes {
+        display: flex;
+        justify-content: space-around;
+        width: 30vw;
+        height: 6vh;
+        margin-bottom: 8%;
+        margin-top: 8%;
+        margin-left: 5%;
+        
+    }
+    
+    .cadastrar,
+    .voltar {
+ display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #362D3E;
+    color: white;
+    width: 20%;
+    font-size: 0.7em;
+    border: 4px solid #cd290c;
+    border-radius: 10px;
+    cursor: pointer;
+    }
+    
+    .nomeUsuario,
+    .email,
+    .senha,
+    .confirmarSenha {
+        width: 50%;
+        height: 23%;
+        background: #362D3E;
+        border: 4px solid #cd290c;
+        border-radius: 10px;
+        outline: none;
+        color: #ffffff;
+        font-size: 0.8em;
+    }
+}
+
+    @media(max-width:430px){
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Press Start 2P", system-ui;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background-image: url('../assets/bg.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+        
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .cadastro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #362D3E;
+            border: 6px solid #cd290c;
+            color: #ffffff;
+            border-radius: 18px;
+            height: 50vh;
+            width: 40vw;
+            font-size: 1.3vh;
+        }
+        
+        h1 {
+            color: #F8B050;
+            font-size: 2.5vh;
+        }
+        
+        .form-campos {
+            display: flex;
+            flex-direction: column;
+            height: 32vh;
+            width: 36vw;
+            gap: 4%;
+            margin-left: 15%;
+        }
+        
+        .botoes {
+            display: flex;
+            justify-content: space-around;
+            width: 30vw;
+            height: 5vh;
+            margin-bottom: 5%;
+            margin-top: 10%;
+           
+        }
+        
+        .cadastrar,
+        .voltar {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #362D3E;
+    color: white;
+    width: 20%;
+    font-size: 0.7em;
+    border: 4px solid #cd290c;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+            
+        }
+        
+        .nomeUsuario,
+    .email,
+    .senha,
+    .confirmarSenha {
+            width: 50%;
+            height: 23%;
+            background: #362D3E;
+            border: 4px solid #cd290c;
+            border-radius: 10px;
+            outline: none;
+            color: #ffffff;
+            font-size: 0.6em;
+        }
+
+    }
+
+    @media(max-width:380px){
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Press Start 2P", system-ui;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background-image: url('../assets/bg.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+        
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .cadastro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #362D3E;
+            border: 6px solid #cd290c;
+            color: #ffffff;
+            border-radius: 18px;
+            height: 50vh;
+            width: 50vw;
+            font-size: 1.3vh;
+        }
+        
+        h1 {
+            color: #F8B050;
+            font-size: 2.5vh;
+        }
+        
+        .form-campos {
+            display: flex;
+            flex-direction: column;
+            height: 30vh;
+            width: 40vw;
+            gap: 4%;
+            margin-left: 15%;
+        }
+        
+        .botoes {
+            display: flex;
+            justify-content: space-around;
+            width: 40vw;
+            height: 5vh;
+            margin-bottom: 5%;
+            margin-top: 10%;
+            padding-right: 5%;
+            margin-left: 5%;
+        }
+        
+        .cadastrar,
+        .voltar {
+display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #362D3E;
+    color: white;
+    width: 20%;
+    font-size: 0.7em;
+    border: 4px solid #cd290c;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+            
+        }
+        
+        .nomeUsuario,
+    .email,
+    .senha,
+    .confirmarSenha {
+            width: 50%;
+            height: 23%;
+            background: #362D3E;
+            border: 4px solid #cd290c;
+            border-radius: 10px;
+            outline: none;
+            color: #ffffff;
+            font-size: 1.1em;
+        }
+
+    }

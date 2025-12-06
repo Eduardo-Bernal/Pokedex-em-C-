@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Press Start 2P", system-ui;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+label {
+    font-size: 1em;
+}
+
+
+body {
+    background-image: url('/assets/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh;
+    gap: 7%;
+}
+
+.erro{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.login {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #362D3E;
+    border: 6px solid #cd290c;
+    color: #ffffff;
+    border-radius: 18px;
+    height: 45vh;
+    width: 40vw;
+    font-size: 1.8vh;
+    margin-bottom: 20px;
+}
+
+.login-alternativo {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #362D3E;
+    border: 6px solid #cd290c;
+    color: #F8B050;
+    border-radius: 18px;
+    height: 45vh;
+    width: 20vw;
+    font-size: 1.8vh;
+    margin-bottom: 2%;
+}
+
+.login h1 {
+    color: #F8B050;
+    font-size: 2.5em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-alternativo h2 {
+    color: #F8B050;
+    font-size: 2.5em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logar {
+    display: grid;
+    flex-direction: column;
+    height: 18vh;
+    width: 40vw;
+    gap: 5%;
+    margin-left: 15%;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-around;
+    width: 40vw;
+    height: 5vh;
+    margin-top: 3%;
+}
+
+.entrar,
+.registrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #362D3E;
+    color: white;
+    width: 20%;
+    font-size: 0.8em;
+    border: 4px solid #cd290c;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.usuario,
+.senha {
+    display: flex;
+    width: 50%;
+    height: 23px;
+    background: #362D3E;
+    border: 4px solid #cd290c;
+    border-radius: 10px;
+    outline: none;
+    color: #ffffff;
+    font-size: 0.6em;
+    text-align: center;
+}
+
+.google {
+    width: 35%;
+    margin-left: 30%;
+}
+
+a {
+    color: #ffffff;
+    font-size: 0.6em;
+}
+
+
+
+
+
+
+
+
+
+
+/* RESPONSAVIDADE */
+
+@media (max-width: 768px) {
+    .login h1 {
+        font-size: 3vw;
+        display: flex;
+        text-align: center;
+    }
+
+    .login-alternativo a {
+        display: flex;
+        text-align: center;
+    }
+
+    .login-alternativo h2 {
+        font-size: 3vw;
+        display: flex;
+        text-align: center;
+    }
+
+    .entrar,
+    .registrar {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+        font-size: 0.05em;
+        width: 400%;
+        margin: 0;
+        height: 160%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .login {
+        width: 500%;
+        height: 50vh;
+        font-size: 2.5vw;
+        gap: 5%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .login h1 {
+        font-size: 2.5vw;
+        display: flex;
+        text-align: center;
+    }
+
+    .login-alternativo a {
+        display: flex;
+        text-align: center;
+    }
+
+    .login-alternativo h2 {
+        font-size: 2.5vw;
+        display: flex;
+        text-align: center;
+    }
+
+    .entrar,
+    .registrar {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+        font-size: 0.07em;
+        width: 200%;
+        margin: 0;
+        height: 120%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login {
+        width: 200%;
+        height: 50vh;
+        font-size: 1.5vw;
+        gap: 5%;
+    }
+
+}
+
+@media (min-width:468) and (max-height:700px) {
+
+    main {
+        flex-direction: column;
+        gap: 20%;
+        height: 200vh;
+    }
+
+    .login {
+        width: 80vw;
+        height: 60vh;
+        font-size: 2.5vw;
+        gap: 5%;
+        margin: 0;
+        margin-right: 10px;
+    }
+
+    .botoes {
+        width: 100%;
+        height: 160%;
+    }
+
+    .logar {
+        width: 80vw;
+        margin-left: 0;
+    }
+
+    .usuario,
+    .senha {
+        width: 80%;
+    }
+
+    .google {
+        width: 50%;
+    }
+
+    .login-alternativo {
+        width: 80vw;
+    }
+
+    label {
+        font-size: 0.5em;
+    }
+
+    .usuario,
+    .senha {
+        font-size: 0.5em;
+    }
+
+    a {
+        font-size: 0.5em;
+    }
+
+    .registrar,
+    .entrar {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+        font-size: 0.05em;
+        width: 300%;
+        height: 160%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media (max-height: 468px) and (min-width: 0px) {
+    main {
+        height: 150vh;
+    }
+
+    .login {
+        height: 40vh;
+        margin-top: 20px;
+    }
+
+    .login-alternativo {
+        height: 40vh;
+        margin-bottom: 20px;
+    }
+
+    .botoes {
+        height: 100%;
+        margin-bottom: 0;
+    }
+
+    .logar {
+        height: 25vh;
+        margin-left: 0;
+        gap: 3%;
+    }
+
+
+
+
+    label {
+        font-size: 0.5em;
+    }
+
+    .usuario,
+    .senha {
+        font-size: 0.5em;
+        height: 20%;
+    }
+
+    a {
+        font-size: 0.5em;
+    }
+
+    .registrar,
+    .entrar {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+        font-size: 0.05em;
+        width: 300%;
+        height: 120%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media (max-height: 468) {
+    .login-alternativo {
+        margin-top: 50px;
+    }
+
+}
+
+
+.google {
+    width: 35%;
+}
+
+a {
+    color: #ffffff;
+    font-size: 0.6em;
+}
+
+label {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .login h1 {
+        font-size: 3vw;
+        display: flex;
+        text-align: center;
+    }
+
+    .login-alternativo a {
+        display: flex;
+        text-align: center;
+    }
+
+    .login-alternativo h2 {
+        font-size: 3vw;
+        display: flex;
+        text-align: center;
+    }
+
+    .entrar,
+    .registrar {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+        font-size: 0.05em;
+        width: 400%;
+        margin: 0;
+        height: 160%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .login {
+        width: 500%;
+        height: 50vh;
+        font-size: 2.5vw;
+        gap: 5%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .login h1 {
+        font-size: 2.5vw;
+        display: flex;
+        text-align: center;
+    }
+
+    .login-alternativo a {
+        display: flex;
+        text-align: center;
+    }
+
+    .login-alternativo h2 {
+        font-size: 2.5vw;
+        display: flex;
+        text-align: center;
+    }
+
+    .entrar,
+    .registrar {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+        font-size: 0.07em;
+        width: 200%;
+        margin: 0;
+        height: 120%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login {
+        width: 200%;
+        height: 50vh;
+        font-size: 1.5vw;
+        gap: 5%;
+    }
+
+}
+
+@media (min-width:468) and (max-height:700px) {
+
+    main {
+        flex-direction: column;
+        gap: 20%;
+        height: 200vh;
+    }
+
+    .login {
+        width: 80vw;
+        height: 60vh;
+        font-size: 2.5vw;
+        gap: 5%;
+        margin: 0;
+        margin-right: 10px;
+    }
+
+    .botoes {
+        width: 100%;
+        height: 160%;
+    }
+
+    .logar {
+        width: 80vw;
+        margin-left: 0;
+    }
+
+    .usuario,
+    .senha {
+        width: 80%;
+    }
+
+    .google {
+        width: 50%;
+    }
+
+    .login-alternativo {
+        width: 80vw;
+    }
+
+    label {
+        font-size: 0.5em;
+    }
+
+    .usuario,
+    .senha {
+        font-size: 0.5em;
+    }
+
+    a {
+        font-size: 0.5em;
+    }
+
+    .registrar,
+    .entrar {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+        font-size: 0.05em;
+        width: 300%;
+        height: 160%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media (max-height: 468px) and (min-width: 0px) {
+    main {
+        height: 150vh;
+    }
+
+    .login {
+        height: 40vh;
+        margin-top: 20px;
+    }
+
+    .login-alternativo {
+        height: 40vh;
+        margin-bottom: 20px;
+    }
+
+    .botoes {
+        height: 100%;
+        margin-bottom: 0;
+    }
+
+    .logar {
+        height: 25vh;
+        margin-left: 0;
+        gap: 3%;
+    }
+
+
+
+
+    label {
+        font-size: 0.5em;
+    }
+
+    .usuario,
+    .senha {
+        font-size: 0.5em;
+        height: 20%;
+    }
+
+    a {
+        font-size: 0.5em;
+    }
+
+    .registrar,
+    .entrar {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+        font-size: 0.05em;
+        width: 300%;
+        height: 120%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media (max-height: 468) {
+    .login-alternativo {
+        margin-top: 50px;
+    }
+
+}

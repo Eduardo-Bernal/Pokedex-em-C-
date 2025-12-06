@@ -1,0 +1,47 @@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cadastro</title>
+
+    <link rel="stylesheet" href="~/css/cadastro.css" />
+</head>
+<body>
+  <main>
+    <section class="cadastro">
+      <h1>Cadastro</h1>
+
+      <form asp-controller="Cadastro" asp-action="Criar" method="post">
+        <div class="form-campos">
+
+          <label for="nomeUsuario">Nome de Usuário</label>
+          <input type="text" name="nomeUsuario" class="nomeUsuario" required />
+
+          <label for="email">Email</label>
+          <input type="email" name="email" class="email" required />
+
+          <label for="senha">Senha</label>
+          <input type="password" name="senha" class="senha" required />
+
+          <label for="confirmarSenha">Confirmar Senha</label>
+          <input type="password" name="confirmarSenha" class="confirmarSenha" required />
+
+        </div>
+
+        <p style="color:red">@ViewBag.Erro</p>
+
+        <div class="botoes">
+          <button class="cadastrar" type="submit">Cadastrar</button>
+
+          <a class="voltar" asp-controller="Login" asp-action="Index">Voltar</a>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
