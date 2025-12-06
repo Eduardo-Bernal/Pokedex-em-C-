@@ -35,7 +35,7 @@ namespace BackEndProjeto.Controllers
                 return RedirectToAction("Index", "Home");
             }
 
-            // Esse Valida nome na API - caiquao amassou nesse 
+            // Esse Valida nome na API - se nao for valido ele retorna esse erro que eu chamei no html como alert
             bool nomeValido = await _apiPokemonService.NomeValidoAsync(pokemon.Nome);
             if (!nomeValido)
             {
